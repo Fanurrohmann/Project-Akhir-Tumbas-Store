@@ -1,0 +1,150 @@
+.contact-info-wrapper {
+    background-color: #fff;
+    border-color: #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%; /* Membuat kedua kotak memiliki tinggi yang sama */
+}
+
+.contact-info-wrapper h4 {
+    font-size: 1.25rem;
+    color: #000;
+}
+
+.contact-info-wrapper p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    font-size: 0.875rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+}
+
+.btn-primary i {
+    font-size: 1rem;
+}
+
+.contact-info-wrapper .btn {
+    flex-shrink: 0; /* Menjaga agar tombol tetap sesuai ukuran */
+}
+
+.contact-info-wrapper div {
+    flex-grow: 1; /* Membuat konten di dalam kotak mengambil ruang yang tersisa */
+}
+
+.feedback-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.feedback-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.feedback-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-email {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+}
+
+.btn-whatsapp img {
+    margin-right: 5px;
+}
+
+.feedback-btn:hover {
+    opacity: 0.9;
+}
+
+/* about us */
+.about-us-area .about-us-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Pusatkan konten secara vertikal */
+    height: 100%; /* Pastikan tinggi sesuai dengan elemen lainnya */
+}
+
+.team-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    text-align: center; /* Pastikan teks juga terpusat */
+    padding: 20px; /* Opsional: Memberi ruang di sekitar elemen */
+}
+
+.team-img img {
+    width: 100%;
+    max-width: 185px; /* Ukuran maksimum gambar */
+    height: auto;
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.team-content h4,
+.team-content span {
+    margin: 0; /* Hilangkan margin default pada teks */
+    line-height: 1.5; /* Sesuaikan jarak antar baris teks */
+}
+
+@media (max-width: 768px) {
+    .team-wrapper {
+        padding: 10px; /* Kurangi padding pada layar kecil */
+    }
+
+    .team-img img {
+        max-width: 120px; /* Gambar lebih kecil pada layar kecil */
+    }
+}
+
+/* halaman order Received */
+.table.table-striped.table-responsive th,
+.table.table-striped.table-responsive td {
+    width: 16.66%; /* Total 6 kolom */
+    text-align: center;
+    word-wrap: break-word;
+}
+
